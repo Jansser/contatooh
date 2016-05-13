@@ -9,5 +9,10 @@ app.config(['$routeProvider', function ($routeProvider) {
 		templateUrl: 'partials/contato.html',
 		controller: 'ContatosController'
 	})
+	.when('/contato', {
+		templateUrl: 'partials/contato.html',
+		controller: 'ContatosController'
+	})
+	
 	.otherwise({redirectTo: '/contatos'});
 }]);
