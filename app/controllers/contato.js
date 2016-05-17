@@ -1,14 +1,13 @@
 module.exports = function (app) {
 	var controller = {};
-	var Contato = app.models.contato;
+	var Contato    = app.models.contato;
 
 	controller.listaContatos = function (req, res) {
-		var promise = Contato.find().exec().then(
+		var promise = Contato.find().populate('emergencia').exec().then(
 			function (contatos) {
 				res.json(contatos);
 			},
 			function (erro) {
-				console.error(erro);
 				res.status(500).json(erro);
 			}
 		);
@@ -16,7 +15,6 @@ module.exports = function (app) {
 
 	controller.obtemContato = function (req, res) {
 		var _id = req.params.id;
-		console.log(_id);
 
 		Contato.findById(_id).exec().then(
 			function (contato) {
@@ -49,10 +47,14 @@ module.exports = function (app) {
 	controller.salvaContato = function (req, res) {
 		var _id = req.body._id;
 
+		req.body.emergencia = req.body.emergencia || null;
+		
 		if(_id) {
 			Contato.findByIdAndUpdate(_id, req.body).exec()
 			.then(
 				function (contato) {
+					console.log(arguments);
+					console.log(contato);
 					res.json(contato);
 				},
 				function (erro) {

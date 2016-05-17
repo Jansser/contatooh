@@ -64,9 +64,8 @@ angular.module('contatooh').controller('ContatosController', ['$scope', '$routeP
 
 	$scope.salva = function () {
 		$scope.contato.$save()
-			.then(function (data) {
+			.then(function () {
 				$scope.mensagem = {texto: 'Salvo com sucesso'};
-				$scope.contato  = data;
 			})
 			.catch(function (erro) {
 				$scope.mensagem = {texto: 'Não foi possível salvar'};
