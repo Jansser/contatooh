@@ -27,3 +27,9 @@ This README would normally document whatever steps are necessary to get your app
 
 * Repo owner or admin
 * Other community or team contact
+
+Client ID
+6d8e6a5bc74bf03d8938
+
+Client Secret
+234e8b7126207dd4c101d766708b1e49c50f0665
