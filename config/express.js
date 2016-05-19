@@ -33,6 +33,7 @@ module.exports = function () {
 	
 	load('models', {cwd: 'app'})
 		.then('controllers')	
+		.then('routes/auth.js')
 		.then('routes')
 		.into(app);
 
