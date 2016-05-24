@@ -11,6 +11,12 @@
 </head>
 <body ng-cloak class="container">
 	<h1>PÁGINA 205</h1>
+	<div class="text-right">
+		<p>
+			Logado como: <span id="usuario-logado"><%=usuarioLogado%></span>
+		</p>
+		<a href="/logout">Logout</a>
+	</div>
 	<div ng-view></div>
 	
 	<script src="vendor/angular-route/angular-route.js"></script>

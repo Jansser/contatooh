@@ -22,5 +22,5 @@ module.exports = function (uri) {
 		});
 	});
 
-	mongoose.set('debug', true);
+	//mongoose.set('debug', true);
 };
