@@ -29,7 +29,7 @@ This README would normally document whatever steps are necessary to get your app
 * Other community or team contact
 
 Client ID
-6d8e6a5bc74bf03d8938
+47e750430a0dbd5385c5
 
 Client Secret
-8021e542cffee21bb2cbc8e07bc2c5668916bd2d
+82fc9215906c6e72998ee8b39a33a24f714a97c6
