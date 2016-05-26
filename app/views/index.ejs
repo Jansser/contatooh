@@ -5,9 +5,12 @@
 	<meta charset="UTF-8">
 	<title>Contatooh</title>
 	
+	<!-- build:css css/index.min.css -->	
 	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">	
 	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css">	
-	<script src="vendor/angular/angular.js"></script>
+	<!-- endbuild -->
+	
+	<!-- <script src="vendor/angular/angular.js"></script> -->
 </head>
 <body ng-cloak class="container">
 	<h1>PÁGINA 205</h1>
@@ -19,10 +22,13 @@
 	</div>
 	<div ng-view></div>
 	
+	<!-- build:js	js/index.min.js -->
+	<script src="vendor/angular/angular.js"></script>
 	<script src="vendor/angular-route/angular-route.js"></script>
 	<script src="vendor/angular-resource/angular-resource.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/services/ContatosService.js"></script>
 	<script src="js/controllers/ContatosController.js"></script>
+	<!-- endbuild -->
 </body>
 </html>

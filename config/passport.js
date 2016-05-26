@@ -11,7 +11,6 @@ module.exports = function () {
 		clientSecret: '82fc9215906c6e72998ee8b39a33a24f714a97c6',
 		callbackURL:  'http://localhost:3000/auth/github/callback/'
 	}, function (accessToken, refreshToken, profile, done) {
-		consol.log('deu erro???');
 		Usuario.findOrCreate(
 			{ 'login': profile.username },
 			{ 'nome': profile.username  },
