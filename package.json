@@ -1,12 +1,13 @@
 {
   "name": "contatooh",
   "version": "1.0.0",
-  "description": "",
+  "description": "MEAN Stack studying.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "jansser",
+  "repository": "contatooh.git",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.0",
@@ -31,6 +32,9 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^1.0.1",
     "grunt-contrib-uglify": "^1.0.1",
-    "grunt-ng-annotate": "^2.0.2"
+    "grunt-ng-annotate": "^2.0.2",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2"
   }
 }
