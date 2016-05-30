@@ -10,5 +10,10 @@ describe('Cadastro de contatos', function () {
 
 		element(by.model('contato.nome')).sendKeys(nome);
 		element(by.model('contato.email')).sendKeys(email);
+		element(by.css('option[value=0]')).click();
+		element(by.css('.btn-primary')).click();
+
+		expect(element(by.binding('mensagem.texto')).getText())
+			.toContain('sucesso');
 	});
 });
