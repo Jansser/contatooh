@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - 5.10.1
+notifications:
+  - jansser_costa@hotmail.com
+before_install:
+  - npm install -g bower@1.7.9
+  - npm install -g grunt-cli@1.2
+  - npm install -g karma-cli@0.13.22
+  - npm install -g protractor@3.3
+  - webdriver-manager update
+  - bower install
+before_script:
+  - grunt
+  - cd dist
+script:
+  - karma start config/karma.config.js --single-run --browsers PhantomJS
