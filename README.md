@@ -33,3 +33,5 @@ Client ID
 
 Client Secret
 82fc9215906c6e72998ee8b39a33a24f714a97c6
+
+Alterando so pra ver o build pegar fogo.
